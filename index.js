@@ -1,22 +1,19 @@
-function writeCards(names,giftEvent){
-    let cardMess = [];
-    debugger;
-    for(let i=0; i < names.length;i++){
-        cardMess.push(`Thank you, ${names[i]}, for the wonderful ${giftEvent} gift!`);               
-        debugger;
-    }   
+let cardMess = [];
+
+function writeCards(names,giftEvent){  
+    
+    for (let i = 0; i < names.length; i++){
+        let message = `Thank you, ${names[i]}, for the wonderful ${giftEvent} gift!`;
+        cardMess.push(message);
+    } 
     return cardMess;
 }
 
-function countDown(number){
-    while(number>=0){
-        number--; 
-        console.log(number);
-        
+let countDown = function (value) {
+    let i = value;
+    while(i>=0){
+      console.log(i);
+      i--
     }
-    
-    return countDown;
-                
-                
-}
+  }
 
